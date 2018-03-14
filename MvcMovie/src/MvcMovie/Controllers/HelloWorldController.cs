@@ -16,7 +16,7 @@ namespace MvcMovie.Controllers
 
         public IActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewData["Message"] = "hello " + name;
+            ViewData["Message"] = "hello, your name is " + name;
             ViewData["NumTimes"] = numTimes;
 
             return View();
